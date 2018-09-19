@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         // Handling the click event on the listItem.
-      listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-          @Override
-          public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-            String list1 = adapterView.getAdapter().getItem(i).toString();
-              Toast.makeText(MainActivity.this, "Tapped at Position  "  + i +  " " + "Name: " +list1, Toast.LENGTH_SHORT).show();
-          }
-      });
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String list1 = parent.getAdapter().getItem(position).toString();
+              Toast.makeText(MainActivity.this, "Tapped at Position  "  + position +  " " + "Name: " +list1, Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }
