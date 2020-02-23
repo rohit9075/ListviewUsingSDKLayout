@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         // adding the constant name in the list
         for (int i = 0; i < 30; i++) {
-            nameList.add("ABC");
+            nameList.add("This is a simple list example");
         }
 
 
